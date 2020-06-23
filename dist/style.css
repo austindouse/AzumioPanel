@@ -60,10 +60,10 @@ body {
   font-weight: 600;
 }
 
-.box:hover {
+/* .box:hover {
   color: white;
   background-color: #424ea6;
-}
+} */
 
 .dot {
   display: inline-block;

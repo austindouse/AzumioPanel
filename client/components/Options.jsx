@@ -6,8 +6,9 @@ const Options = ({options}) => {
   const handleClick = (selectedOption) => {
     if (currentOptions.indexOf(selectedOption) >= 0) {
       let index = currentOptions.indexOf(selectedOption);
-      let newOptions = currentOptions;
+      let newOptions = currentOptions.slice();
       newOptions.splice(index, 1);
+      console.log("new options", newOptions);
       setCurrentOptions(newOptions);
     } else {
       let newOptions = currentOptions;
@@ -22,7 +23,8 @@ const Options = ({options}) => {
       <div className="optionsContainer">
         {options.length
           ? options.map((option, i) => {
-              if (currentOptions.indexOf(option) >= 0) {
+              if (currentOptions.indexOf(option) > -1) {
+                console.log("in the array");
                 return (
                   <div
                     className="selected"
@@ -34,6 +36,7 @@ const Options = ({options}) => {
                   </div>
                 );
               } else {
+                console.log("not in the array");
                 return (
                   <div
                     className="box"
