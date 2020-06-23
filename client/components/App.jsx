@@ -16,7 +16,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="panelContainer">
         {this.state.currentPanel === 1 ? <Panel1 /> : ""}
         {this.state.currentPanel === 2 ? <Panel2 /> : ""}
         {this.state.currentPanel === 3 ? <Panel3 /> : ""}
