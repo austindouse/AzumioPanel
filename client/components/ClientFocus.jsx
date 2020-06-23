@@ -17,7 +17,7 @@ class ClientFocus extends Component {
     return (
       <div className="clientFocus">
         <Header question={this.state.question} prompt={this.state.prompt} />
-        <Options options={this.state.options} />
+        <Options options={this.state.options} handleClick={this.handleClick} />
       </div>
     );
   }
