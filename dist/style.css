@@ -20,31 +20,15 @@ body {
   font-size: 50px;
   color: #283154;
   max-width: 50%;
+  font-weight: 600;
 }
 
 .prompt {
   margin-top: 50px;
   font-size: 35px;
-  max-width: 90%;
+  max-width: 75%;
   color: #283154;
 }
-
-/* .optionsContainer {
-  text-align: center;
-  margin-top: 50px;
-  display: flex;
-  width: 90%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: space-around;
-} */
-
-/* .box {
-  border: 1px solid #c3c3c3;
-  border-radius: 5px;
-  margin-top: 50px;
-  color: #b3b1b1;
-} */
 
 .optionsWrapper {
   margin-top: 50px;
@@ -73,7 +57,7 @@ body {
   font-size: 2em;
   font-weight: 100;
   color: #b3b1b1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .box:hover {
@@ -99,10 +83,8 @@ body {
 .footer {
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
   width: 100%;
-  margin: auto;
-  position: absolute;
-  bottom: 0;
 }
 
 .done {
@@ -114,4 +96,21 @@ body {
 .back {
   color: #b3b1b1;
   font-size: 25px;
+}
+
+.selected {
+  display: flex;
+  flex: 0 0 45%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 150px;
+  width: 200px;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
+  font-size: 2em;
+  font-weight: 100;
+  color: white;
+  background-color: #424ea6;
+  font-weight: 600;
 }
