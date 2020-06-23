@@ -2,9 +2,9 @@ import React from "react";
 
 const Header = ({question, prompt}) => {
   return (
-    <div>
-      <div>{question}</div>
-      <div>{prompt}</div>
+    <div className="header">
+      <div className="question">{question}</div>
+      <div className="prompt">{prompt}</div>
     </div>
   );
 };
