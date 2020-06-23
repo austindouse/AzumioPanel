@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap"); */
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   background-color: #f7f7f7;
   width: 100%;
   height: 100vh;
@@ -12,8 +12,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 120px;
   max-width: 100%;
+  padding-top: 120px;
 }
 
 .question {
@@ -51,7 +51,7 @@ body {
   align-items: center;
   margin: 20px;
   height: 150px;
-  width: 200px;
+  width: 150px;
   border: 1px solid #c3c3c3;
   border-radius: 10px;
   font-size: 2em;
@@ -80,11 +80,19 @@ body {
   background-color: #424ea6;
 }
 
+.panelContainer {
+  position: relative;
+  height: 100vh;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
 }
 
 .done {
